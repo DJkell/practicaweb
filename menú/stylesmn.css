@@ -67,7 +67,7 @@ line-height: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 145, 0);
+    background-color: #da9d1b;
     border-radius: 50px ; 
     height: 31px;
     min-width: 31px;
@@ -83,7 +83,7 @@ header nav{
 .pr-contain{
     z-index: 1;
     position: absolute;
-    background-color: rgba(243, 36, 0, 0.904);
+    background-color: #d82b04;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,10 +93,11 @@ header nav{
     height: 90vh;
     padding: 0% 0vw;
     display: flex;
+    overflow: hidden;
 }
 
 .btn {
-    background-color: rgb(252, 172, 0); 
+    background-color:#da9d1b; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +123,7 @@ header nav{
 }
 
 .contain{
+    z-index: 6;
     display: flex;
     flex-direction: row;
     justify-content:st;
@@ -142,7 +144,8 @@ header nav{
     flex-direction: column;
 }
 
-.contain .contain-2 img{
+.contain .contain-2 img {
+    z-index:5;
     position:relative;
     width: 100%;
     
@@ -152,14 +155,71 @@ header nav{
     font-size: 3vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    color: aliceblue;
-    filter: opacity(60%);
+    color: rgba(240, 248, 255, 0.616);
+
+}
+
+.details:nth-child(1){
+    z-index:1;
+    top: 35vh;
+    left: 43vw;
+    height: 55vw;
+    width: 55vw;
+    position: absolute;
+    opacity: 40%;
+    background-color: #7a0303;
+    transform: rotate(20deg);
+    mask-image: url(/menú/src/hamburger/salsa.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+.details:nth-child(2){
+    z-index:1;
+    top: 12vh;
+    left: 56vw;
+    height: 15vw;
+    width: 15vw;
+    position: absolute;
+    opacity: 30%;
+    background-color: #7a0303;
+    mask-image: url(/menú/src/hamburger/salsa.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.details:nth-child(3){
+    z-index:1;
+    top: -12vh;
+    left: 70vw;
+    height: 35vw;
+    width: 25vw;
+    position: absolute;
+    opacity: 20%;
+    background-color: #7a0303;
+    mask-image: url(/menú/src/hamburger/salsa.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    transform: rotate(180deg);
 }
 
 .contain-1 b{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    filter: opacity(100%);
+    color:rgb(255, 208, 0);
 }
+
+/* .details:nth-child(4){
+    z-index:1;
+    position: relative;
+    top: -6vh;
+    left: 16vw;
+    transform: rotate(-5deg);
+    height: 5vw;
+    width: 18vw;
+    opacity: 50%;
+    background-color: #7a0303;
+    mask-image: url(/menú/src/hamburger/klipartz.com.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;  
+} */
 
 .sd-contain{
     z-index: 2;
