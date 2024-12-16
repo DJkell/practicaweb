@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="styles">
+    <title>Document</title>
+    <style>
+
+body{
+    margin-left: 20%;
+}
+
+.album {
+    padding: 1em;
+    background: lightgrey;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    width: 150px;
+    gap: 20px;
+    overflow-x: scroll;
+
+    scroll-snap-type: x proximity;
+}
+
+.item {
+    background: red;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align:start;
+    scroll-margin: 15px;
+}
+
+.album2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    columns:2 300px;
+    column-gap: 2%;
+    width: 80%;
+    height: 30%;
+    background-color: aqua;
+    
+    
+}
+.item2 {
+    background: red;
+    height: 50px;
+    margin: 30px;
+    color: #fff;
+    display: block;
+    min-width:50px ;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+       <ul>
+        <li>Login</li>
+        <li></li>
+       </ul> 
+
+    </header>
+<img style="position: sticky; top: 0; right: 0; bottom: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu2qS2HxSN4en7ehlHUx43YiG7k3GFZKTEHw&s" >
+
+
+
+<h1 style="text-shadow:1px 1px 0 red;">hola</h1>
+
+<div class="album">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+<div class="album2">
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+</body>
+</html>
