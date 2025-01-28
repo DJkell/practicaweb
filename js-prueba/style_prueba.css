@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+overflow-x: hidden;}
+
+header{
+    margin: 0%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 10% 30% 70%;
+    /* border-bottom: 1px solid black; */
+    /* filter: drop-shadow(black 2px 2px 2px); */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);   }
+
+header nav li  {
+    display:inline;
+    list-style: none;}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+
+main{
+    padding-top: 3%;
+    background-color: rgb(58, 57, 57);
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+section{
+    background-color: aqua;
+    display: block;
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+    margin-left:4%;
+    
+}
+
+section .contain {
+    background-color: blue;
+    margin-top: 20px;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    padding: 1% 0%;}
+
+section .contain .head{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding-left: 2%;
+    padding: 1.5%;
+    background-color: blueviolet;
+}
+
+section .contain .list_tareas {
+    display: flex;
+    background-color: rgb(244, 244, 244);
+    flex-direction: column;
+    min-height:50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ ul .tarea_basic { /*Estas son las tareas directamente*/ 
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border: 1px solid black;
+    width: 95%;
+    margin: 1%;
+    padding: 1.5%;}
+
+p{
+    text-align: center;
+}
+    
+ul{
+    display: contents;
+    list-style: none;}
+
+h1{
+    margin: 0%;}

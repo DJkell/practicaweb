@@ -90,7 +90,7 @@ header nav{
     width: 100%;
     right: 0; 
     left: 0;
-    height: 90vh;
+    height: 100vh;
     padding: 0% 0vw;
     display: flex;
     overflow: hidden;
@@ -222,7 +222,7 @@ header nav{
 } */
 
 .sd-contain{
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     background-color: rgb(248, 235, 233);
     background-position: center;
@@ -231,11 +231,79 @@ header nav{
     width: 100%;
     right: 0; 
     left: 0;
-    top: 96vh;
+    top: 40vh;
     height: 100vh;
     padding: 5% 12%;
     display: flex;
 }
 
+/*responsive---------------------/**/
+@media (width <= 500px){
+
+    .contain{
+        flex-direction: row;
+        justify-content:st;
+        width: 100%;
+        margin-top: 10vh;
+        margin-left:5vw;
+        margin-right:9vw; 
+    }
+    
+    .btn {
+        flex-wrap: nowrap;
+        min-height: 5%;
+        width: 60%;
+        border-radius: 3px;
+        font-size: 60%;
+        margin-top: 3vh;
+    }
+
+    .pr-contain h1{
+        color: aliceblue;
+        font-size: 7vw;
+        margin-bottom: 2vh;
+    }
+    .pr-contain{
+        height: 47vh;
+        padding: 0% 3vw;
+        display: flex;
+    }
+    .contain .contain-2 img {
+        z-index:5;
+        position:relative;
+        width: 125%;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 3fr ;
+        min-width: 100%;
+        position: fixed;
+        width: 100%;
+        color: aliceblue;
+        margin-top: 10px;
+        font-size: 0.9em;
+        justify-content: start;
+    }
+    
+    header img {
+        object-fit:contain;
+        width: 7px;
+    }
+    
+    .logo {
+        width: 9vw;
+        background-color: aliceblue;
+        border-radius: 50px;
+    }
+
+    .extra, .E-block{
+        display: none;
+    }
+
+    body {
+        margin: 0px 0%;
+    }
+
+}
 
 
