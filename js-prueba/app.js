@@ -4,6 +4,11 @@ const textV = document.querySelector('.list_tareas p');
 const contain = document.querySelector('.list_tareas ul');
 
 
+
+
+
+
+
 btnAdd.addEventListener('click', (e)=>{
     e.preventDefault();
     let data = input.value;
@@ -13,22 +18,32 @@ btnAdd.addEventListener('click', (e)=>{
     if (data != ''){
     let tarea = document.createElement('li');
     let tareaText = document.createElement('h3');
-    let btnDelete = document.createElement('button');
-
     tareaText.textContent = data;
-    btnDelete.textContent = 'X';
+    
     contain.appendChild(tarea);
     tarea.appendChild(tareaText);
-    tarea.appendChild(btnDelete);
-
     tarea.classList.add('tarea_basic');
-    btnDelete.classList.add('btn-delete');
+    tarea.appendChild(deleteBtn());
+    
+    
     }
 
     input.value = '';
 
 });
 
+function deleteBtn(){
+    const btnDelete = document.createElement('button');
+    btnDelete.textContent = 'X';
+    btnDelete.classList.add('btn-delete');   
+
+btnDelete.addEventListener('click', (e)=>{
+    let item = e.target.parentElement;
+    contain.removeChild(item);
+
+})
+    return btnDelete;
+}
 
 
 
