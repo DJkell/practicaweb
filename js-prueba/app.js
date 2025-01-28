@@ -28,11 +28,7 @@ btnAdd.addEventListener('click', (e)=>{
     contain.appendChild(tarea);
     tarea.appendChild(tareaText);
     tarea.classList.add('tarea_basic');
-    tarea.appendChild(deleteBtn());
-    
-    
-    }
-
+    tarea.appendChild(deleteBtn());}
     input.value = '';
 
 });
