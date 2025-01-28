@@ -1,6 +1,7 @@
 body {
     margin: 0%;
-overflow-x: hidden;}
+overflow-x: hidden;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
 header{
     margin: 0%;
@@ -24,9 +25,7 @@ main{
     padding-top: 3%;
     background-color: rgb(58, 57, 57);
     height: 100vh;
-    overflow: hidden;
-   
-}
+    overflow: hidden;}
 
 section{
     background-color: aqua;
@@ -34,9 +33,7 @@ section{
     justify-content: center;
     width: 90vw;
     height: auto;
-    margin-left:4%;
-    
-}
+    margin-left:4%;}
 
 section .contain {
     background-color: blue;
@@ -51,8 +48,7 @@ section .contain .head{
     grid-template-columns: 80% 20%;
     padding-left: 2%;
     padding: 1.5%;
-    background-color: blueviolet;
-}
+    background-color: blueviolet;}
 
 section .contain .list_tareas {
     display: flex;
@@ -60,10 +56,9 @@ section .contain .list_tareas {
     flex-direction: column;
     min-height:50px;
     width: 100%;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
- ul .tarea_basic { /*Estas son las tareas directamente*/ 
+ul .tarea_basic { /*Estas son las tareas directamente*/ 
     display: grid;
     grid-template-columns: 90% 10%;
     border: 1px solid black;
@@ -72,12 +67,72 @@ section .contain .list_tareas {
     padding: 1.5%;}
 
 p{
-    text-align: center;
-}
+    text-align: center;}
     
 ul{
     display: contents;
     list-style: none;}
 
-h1{
-    margin: 0%;}
+.pop-cuadro{
+    display: none;
+    background-color: aliceblue;
+    position: absolute;
+    height: 200px;
+    min-width: 60%;
+    margin: 40% 10%;
+    /* display: grid; */
+    grid-template-rows: 20% 80%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 0%;
+    /* tempotal */}
+
+.head{
+    width: 97.2%;
+    align-items:center;}
+
+h2{
+    text-align: center;
+padding: 0px;
+margin-top: 1.5%;}
+
+input {
+    margin: 3%;
+    height: 20%;
+    border-radius: 4px;
+    width: 60%; 
+    margin-left: 20%;}
+
+#add{
+background-color: rgb(1, 213, 132); 
+width: 33.5%; 
+margin-left:33.5%;
+margin-top:10px ; 
+border: none;
+height: 20%;
+border-radius: 4px;}
+
+#addTarea{
+    background-color: rgb(1, 213, 132); 
+    width: 100%; 
+    border: none;
+    height: 50%;
+    border-radius: 4px; }
+
+.show{
+    display: grid;}
+
+.btn-x{
+    position: absolute;
+    background-color: rgb(212, 11, 108);
+    right: 0;
+    top: 0;
+    border-radius: 0px 9px 0px 10px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
